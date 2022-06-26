@@ -1,0 +1,110 @@
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 10px; /*for a better view*/
+}
+/*HEADER*/
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 500px;
+    border: 2px solid black; /*Just for the layout*/
+}
+.header>ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    gap: 5px;
+}
+.header>ul>li>a{
+    text-decoration: none;
+}
+/*BANNER*/
+.banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center ;
+    padding: 30px;
+    gap: 100px;
+    border: 2px solid black; /*just for the layout*/
+}
+.main-title, .image{
+    border: 2px solid black; /*just for the layout*/
+    width: 400px;
+}
+.main-title{
+    text-align: left;
+    padding: 10px;
+}
+.image{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+/*INFO*/
+.info{ /*the biggest one*/
+    display: flex;
+    flex-direction: column;
+}
+.info, .random-info, .image-and-text, .image-and-text-items{
+    border: 2px solid black; /*just for the layout*/
+}
+.random-info, .image-and-text, .image-and-text-subitems{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.image-and-text{ /*the div under the text*/
+    flex-direction: row;
+    gap: 20px;
+}
+.image-and-text-items{ /*the div with the other div and the text*/
+    text-align: center;
+}
+.image-and-text-subitems{ /*the div with the border radius*/
+    flex-direction: row;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    border: 2px solid blue;
+}
+/*QUOTE*/
+.quote{
+    border: 2px solid black; /*just for the layout*/
+    padding: 30px 180px; 
+    text-align: center;
+}
+
+/*SIGN UP*/
+.sign-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    border: 2px solid black; /*just for the layout*/
+}
+.sign-up-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+    gap: 80px;
+    padding:0px 80px;
+    border: 2px solid black; /*just for the layout*/
+}
+
+/*FOOTER*/
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black; /*just for the layout*/
+    padding: 30px 0px;
+}
