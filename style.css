@@ -4,21 +4,30 @@
     box-sizing: border-box;
 }
 body{
-    display: grid;
     width: 100vw;
     height: 100vh;
-    grid-template-areas: 
-    "header header header header"
-    "main main main main"
-    "main main main main"
-    "main main main main"
-    "main main main main"
+    grid-area: main;
+    display: grid;
+    grid-template-areas:
+    "header header header header" 
+    "info info info info"
+    "info info info info"
+    "info info info info"
+    "random random random random"
+    "random random random random"
+    "random random random random"
+    "quote quote quote quote"
+    "quote quote quote quote"
+    "quote quote quote quote"
+    "contact contact contact contact"
+    "contact contact contact contact"
+    "contact contact contact contact"
     "footer footer footer footer"
     ;
 }
 
 #header{
-    width: 100vw;
+    width: 100%;
     grid-area: header;
     display: flex;
     flex-wrap: wrap;
@@ -49,25 +58,7 @@ body{
     text-decoration: none;
     color: #E5E7EB;
 }
-#main{
-    width: 100vw;
-    grid-area: main;
-    display: grid;
-    grid-template-areas: 
-    "info info info info"
-    "info info info info"
-    "info info info info"
-    "random random random random"
-    "random random random random"
-    "random random random random"
-    "quote quote quote quote"
-    "quote quote quote quote"
-    "quote quote quote quote"
-    "contact contact contact contact"
-    "contact contact contact contact"
-    "contact contact contact contact"
-    ;
-}
+
 #info{
     grid-area: info; 
     background-color: #1F2937;
