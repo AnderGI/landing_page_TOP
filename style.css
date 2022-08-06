@@ -174,7 +174,7 @@ button{
 
 #footer{
     display: flex;
-    width: 100vw;
+    width: 100%;
     grid-area: footer;
     justify-content: center;
     align-items: center;
