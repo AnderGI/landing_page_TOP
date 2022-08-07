@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --light-dark:#1F2937;
+    --blue:#3882F6;
+    --white-txt:#E5E7EB;
+    --white-title-button:#F9FAF8;
 }
 body{
     width: 100vw;
@@ -36,10 +40,10 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 1rem 10rem;
-    background-color: #1F2937;
+    background-color: var(--light-dark);
 }
 #header-logo{
-    color: #F9FAF8;
+    color: var(--white-title-button);
     font-weight: 500;
     font-size: 1.7rem;
 }
@@ -56,12 +60,12 @@ body{
 }
 #header-list > li > a{
     text-decoration: none;
-    color: #E5E7EB;
+    color: var(--white-txt);
 }
 
 #info{
     grid-area: info; 
-    background-color: #1F2937;
+    background-color: var(--light-dark);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -69,13 +73,13 @@ body{
     padding: 1rem 10rem;
 }
 #info>h3{
-    color: #F9FAF8;
+    color: var(--white-title-button);
     font-size: 3rem;
     font-weight: 900;
     flex-wrap: wrap;
 }
 #info>p{
-    color: #E5E7EB;
+    color: var(--white-txt);
     font-size: 1.5rem;
     flex-wrap: wrap;
 }
@@ -85,8 +89,8 @@ button{
     height: fit-content;
     font-size: 1.3rem;
     font-weight: 600;
-    background-color: #3882F6;
-    color: #F9FAF8;
+    background-color:var(--blue);
+    color: var(--white-title-button);
     border: none;
     border-radius: 10%;
 }
@@ -117,13 +121,13 @@ button{
     padding: 2rem;
     width: 200px;
     height: fit-content;
-    border: 3px solid #3882F6;
+    border: 3px solid var(--blue);
     border-radius: 10%;
     font-size: 1.2rem;
     text-align: center;
     font-weight: 300;
     line-height: 1.5rem;
-    color: #1F2937;
+    color: var(--light-dark);
 }
 
 #quote{
@@ -132,12 +136,12 @@ button{
     flex-direction: column;
     height: fit-content;
     padding:2rem 10rem ;
-    background-color: #E5E7EB;
+    background-color: var(--white-txt);
 }
 #quotetxt{
     flex-wrap: wrap;
     font-style: light italic;
-    color: #1F2937;
+    color: var(--light-dark);
     font-size: 2rem;
 }
 #quoteauthor{
@@ -153,7 +157,7 @@ button{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 2rem 2rem;
+    padding: 4rem 2rem;
 }
 #contact>div{
     display: flex;
@@ -164,7 +168,7 @@ button{
     width: 75%;
     height: fit-content;
     align-items: center;
-    background-color: #3882F6;
+    background-color: var(--blue);
     color: white;
     font-size: 2rem;
 }
@@ -178,8 +182,8 @@ button{
     grid-area: footer;
     justify-content: center;
     align-items: center;
-    background-color: #1F2937;
-    color: #E5E7EB;
+    background-color: var(--light-dark);
+    color: var(--white-txt);
     font-size: 1.5rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
